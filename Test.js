@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click', async () => {
         try {
             const selectedCode = villeDropdown.value;
-            const response = await fetch(`https://api.meteo-concept.com/api/forecast/daily/?code=${selectedCode}&token=4ac3b7ed2ba7f1ac07ff2cba14c7e514d7820b102d33590aeb3976ddc9148485`);
+            const response = await fetch(`https://api.meteo-concept.com/api/forecast/daily/?code=${selectedCode}&token=4ac3b7ed2ba7f1ac07ff2cba14c7e514d7820b102d33590aeb3976ddc9148485`); /* url de l'api avec le token */
             const data = await response.json();
             console.log(data); // Vérifiez les données dans la console pour un premier test
             // Formater les données de manière plus lisible avant de les afficher
